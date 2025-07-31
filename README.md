@@ -24,3 +24,16 @@
         -   to category-item.styles.scss
     -   update category-item.component.jsx : import styles
     -   update App.jsx : import CategoryItem
+-   [lesson5](https://github.com/wolf790206/crwn-clothing/tree/lesson5)
+    -   update vite.config.js : add file link 
+    -   create file to ./ add jsconfig.json
+    -   update jsconfig.json : add file link 
+    -   create folder components/directory
+    -   create file to components/directory add directory.component.jsx
+    -   create file to components/directory add directory.styles.scss
+    -   update App.jsx : copy .categories-container
+        -   to directory.component.jsx
+    -   update category.styles.scss : copy .categories-container
+        -   to directory.styles.scss
+    -   delete category.styles.scss
+
