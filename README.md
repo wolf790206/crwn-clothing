@@ -121,3 +121,23 @@
 
 </details>
 
+
+### [lesson10](https://github.com/wolf790206/crwn-clothing/tree/lesson10)
+<details>
+<summary>點我展開細節</summary>
+
+-   add package vite-plugin-svgr [how to use](https://medium.com/@lisalisa12332180/%E4%BD%BF%E7%94%A8svgr%E5%9C%A8vite-react-typescript%E5%B0%88%E6%A1%88%E4%B8%AD%E5%BC%95%E5%85%A5svg%E5%9C%96%E6%AA%94-9634c2362dc6)
+-   update vite.config.js : add plugins svgr
+-   update jsconfig.json : add types vite-plugin-svgr/client
+-   create folder assets
+-   update assets folder : crown.svg
+-   update navigation.component.jsx : import crown.svg
+-   create file to routers/navigation add navigation.styles.css
+-   update navigation.component.jsx : import navigation.styles.css
+-   update navigation.component.jsx : update logo link
+-   update index.scss : update a & *
+-   update vite.config.js : add assets link 
+-   update jsconfig.json : add assets link 
+
+</details>
+
