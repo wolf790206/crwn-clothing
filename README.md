@@ -40,3 +40,17 @@
 -   update index.html : add fonts link
 -   update index.css to index.scss : add fonts family
 -   update main.jsx : change import index.scss
+### [lesson7](https://github.com/wolf790206/crwn-clothing/tree/lesson7)
+-   add package react-router@7
+-   update main.jsx : add react-router BrowserRouter
+-   create folder routers
+-   create folder routers/home
+-   create file to routers/home add home.component.jsx
+-   update App.jsx : copy all code
+    -   to directory.component.jsx
+-   update directory.component.jsx : App String change to Home
+-   update App.jsx : import Home
+-   update App.jsx : add react-router Route & Routes
+-   update App.jsx : set Home Route
+-   update vite.config.js : add rouers link 
+-   update jsconfig.json : add rouers link 

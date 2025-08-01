@@ -13,6 +13,7 @@ export default defineConfig({
 		alias: {
 			'@': path.resolve(__dirname, './src'), // @ 指向 src 資料夾
 			'@components': path.resolve(__dirname, './src/components'),
+			'@routers': path.resolve(__dirname, './src/routers'),
 		},
 	},
 	base: '/crwn-clothing/dist/',
