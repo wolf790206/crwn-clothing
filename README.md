@@ -54,3 +54,7 @@
 -   update App.jsx : set Home Route
 -   update vite.config.js : add rouers link 
 -   update jsconfig.json : add rouers link 
+### [lesson8](https://github.com/wolf790206/crwn-clothing/tree/lesson8)
+-   update App.jsx : add react-router Outlet
+-   update App.jsx : add navigation & shop
+-   update App.jsx : update route code
