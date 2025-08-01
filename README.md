@@ -7,8 +7,13 @@
 <details>
 <summary>點我展開細節</summary>
 
--   create project
--   use ## npm create vite@latest crwn-clothing -- --template react
+#### 建立專案
+
+- 建立專案 `npm create vite@latest crwn-clothing -- --template react`
+**crwn-clothing 可改為自己專案的名稱**
+-  `App.jsx` 
+  - 建立基本的HTML格式
+---
 
 </details>
 
@@ -16,8 +21,18 @@
 <details>
 <summary>點我展開細節</summary>
 
--   use map()
--   update App.jsx : build category obj
+#### 簡化程式
+
+-  `App.jsx` 
+  - 建立 `category` 物件
+  - 嘗試使用 `map()` 的方式建立HTML
+---
+
+#### 補充概念
+
+- [Obj 物件](https://ithelp.ithome.com.tw/articles/10219496)
+- [map()](https://ithelp.ithome.com.tw/articles/10215281)
+---
 
 </details>
 
@@ -25,9 +40,20 @@
 <details>
 <summary>點我展開細節</summary>
 
--   add package sass 
--   create file to src add category.styles.scss
--   update App.jsx : import styles
+#### 使用樣式
+
+- 安裝套件 `npm install sass`
+- 新增檔案 `category.styles.scss` 在 `src/`
+- `category.styles.scss`
+  - 建立樣式
+- `App.jsx`
+  - 匯入 `category.styles.scss`
+---
+
+#### 補充概念
+
+- [SCSS](https://ithelp.ithome.com.tw/m/articles/10190746)
+---
 
 </details>
 
@@ -138,6 +164,67 @@
 -   update index.scss : update a & *
 -   update vite.config.js : add assets link 
 -   update jsconfig.json : add assets link 
+
+</details>
+
+
+### [lesson11](https://github.com/wolf790206/crwn-clothing/tree/lesson11)
+<details>
+<summary>點我展開細節</summary>
+
+#### 安裝與初始化 Firebase
+
+- 安裝套件 `npm install firebase`
+- 建立資料夾 `src/routers/sign-in/`
+- 新增檔案 `sign-in.component.jsx` 在 `src/routers/sign-in/`
+---
+
+#### 加入 Firebase 專案設定
+
+- 建立資料夾 `src/utils/firebase/`
+- 新增檔案 `firebase.utils.js` 在 `src/utils/firebase/`
+-  `firebase.utils.js` ：
+  - 匯入 `initializeApp` 從 `firebase/app`
+  - 匯入 `getAuth`, `signInWithRedirect`, `signInWithPopup`, `GoogleAuthProvider` 從 `firebase/auth`
+  - 新增 provider 物件，設定自定義參數
+  - 建立 `auth` 與 `signInWithGooglePopup` 函式
+---
+
+#### 建立 Firebase 帳號
+
+- [Firebase](https://firebase.google.com/)
+- 登入 Firebase Console，點選「新增專案」**不需要啟用 Google Analytics**
+- 新增應用程式 → 選擇「Web」→ 填寫網頁名稱 **不需要啟用 Hosting**
+- 複製 `firebaseConfig` 並貼到 `firebase.utils.js`
+---
+
+#### 開啟 Firebase Authentication
+
+- 在 Firebase Console → 選擇左側選單「Authentication」
+- 開啟「Google 登入」方式（Enable）
+---
+
+#### 專案整合流程
+
+- `App.jsx` 新增 `/sign-in` Route
+- `navigation.component.jsx`
+  - 加入 Link 至 `/sign-in`
+- `sign-in.component.jsx`
+  - 匯入 `signInWithGooglePopup` 從 `firebase.utils.js`
+  - 建立 `logGoogleUser()` **需要注意async**
+  - 加入測試 `console.log()`
+---
+
+#### 補充概念
+
+- [什麼是 CRUD？](https://ithelp.ithome.com.tw/articles/10244492)
+- CRUD = Create / Read / Update / Delete，是資料處理的基本操作
+---
+
+#### 路徑新增
+- `vite.config.js` 加入 utils 路徑
+- `jsconfig.json` 加入 utils 路徑
+---
 
 </details>
 
