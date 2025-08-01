@@ -3,30 +3,41 @@
 -   React + Vite
 -   firebase
 
+### lesson1
 <details>
-<summary> ⌲  ### lesson1</summary> 
+<summary>點我展開細節</summary>
+
 [lesson1](https://github.com/wolf790206/crwn-clothing/tree/lesson1)
 -   create project
 -   use ## npm create vite@latest crwn-clothing -- --template react
+
 </details>
 
+### lesson2
 <details>
-<summary> ⌲ ### lesson2</summary> 
+<summary>點我展開細節</summary>
+
 [lesson2](https://github.com/wolf790206/crwn-clothing/tree/lesson2)
 -   use map()
 -   update App.jsx : build category obj
+
 </details>
 
+### lesson3
 <details>
-<summary> ⌲ ### lesson3</summary> 
+<summary>點我展開細節</summary>
+
 [lesson3](https://github.com/wolf790206/crwn-clothing/tree/lesson3)
 -   add package sass 
 -   create file to src add category.styles.scss
 -   update App.jsx : import styles
+
 </details>
 
+### lesson4
 <details>
-<summary> ⌲ ### lesson4</summary> 
+<summary>點我展開細節</summary>
+
 [lesson4](https://github.com/wolf790206/crwn-clothing/tree/lesson4)
 -   update App.jsx : category obj add imageUrl
 -   create folder components/category-item
@@ -38,10 +49,13 @@
     -   to category-item.styles.scss
 -   update category-item.component.jsx : import styles
 -   update App.jsx : import CategoryItem
+
 </details>
 
+### lesson5
 <details>
-<summary> ⌲ ### lesson5</summary> 
+<summary>點我展開細節</summary>
+
 [lesson5](https://github.com/wolf790206/crwn-clothing/tree/lesson5)
 -   update vite.config.js : add file link 
 -   create file to ./ add jsconfig.json
@@ -56,16 +70,21 @@
 -   delete category.styles.scss
 </details>
 
+### lesson6
 <details>
-<summary> ⌲ ### lesson6</summary> 
+<summary>點我展開細節</summary>
+
 [lesson6](https://github.com/wolf790206/crwn-clothing/tree/lesson6)
 -   update index.html : add fonts link
 -   update index.css to index.scss : add fonts family
 -   update main.jsx : change import index.scss
+
 </details>
 
+### lesson7
 <details>
-<summary> ⌲ ### lesso7</summary> 
+<summary>點我展開細節</summary> 
+
 [lesson7](https://github.com/wolf790206/crwn-clothing/tree/lesson7)
 -   add package react-router@7
 -   update main.jsx : add react-router BrowserRouter
@@ -80,18 +99,24 @@
 -   update App.jsx : set Home Route
 -   update vite.config.js : add rouers link 
 -   update jsconfig.json : add rouers link 
+
 </details>
 
+### lesson8
 <details>
-<summary> ⌲ ### lesso8</summary> 
+<summary>點我展開細節</summary> 
+
 [lesson8](https://github.com/wolf790206/crwn-clothing/tree/lesson8)
 -   update App.jsx : add react-router Outlet
 -   update App.jsx : add navigation & shop
 -   update App.jsx : update route code
+
 </details>
 
+### lesson9
 <details>
-<summary> ⌲ ### lesso9</summary> 
+<summary>點我展開細節</summary>
+
 [lesson9](https://github.com/wolf790206/crwn-clothing/tree/lesson9)
 -   create folder routers/navigation
 -   create file to routers/navigation add navigation.component.jsx
@@ -102,5 +127,6 @@
 -   update App.jsx : remove react-router Outlet & Navigation ()=>{}
 -   update App.jsx : import Navigation.component.jsx
 -   update navigation.component.jsx : update home link & shop link
+
 </details>
 
