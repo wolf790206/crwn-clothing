@@ -3,42 +3,38 @@
 -   React + Vite
 -   firebase
 
-### lesson1
+### [lesson1](https://github.com/wolf790206/crwn-clothing/tree/lesson1)
 <details>
 <summary>點我展開細節</summary>
 
-[lesson1](https://github.com/wolf790206/crwn-clothing/tree/lesson1)
 -   create project
 -   use ## npm create vite@latest crwn-clothing -- --template react
 
 </details>
 
-### lesson2
+### [lesson2](https://github.com/wolf790206/crwn-clothing/tree/lesson2)
 <details>
 <summary>點我展開細節</summary>
 
-[lesson2](https://github.com/wolf790206/crwn-clothing/tree/lesson2)
 -   use map()
 -   update App.jsx : build category obj
 
 </details>
 
-### lesson3
+### [lesson3](https://github.com/wolf790206/crwn-clothing/tree/lesson3)
 <details>
 <summary>點我展開細節</summary>
 
-[lesson3](https://github.com/wolf790206/crwn-clothing/tree/lesson3)
 -   add package sass 
 -   create file to src add category.styles.scss
 -   update App.jsx : import styles
 
 </details>
 
-### lesson4
+### [lesson4](https://github.com/wolf790206/crwn-clothing/tree/lesson4)
 <details>
 <summary>點我展開細節</summary>
 
-[lesson4](https://github.com/wolf790206/crwn-clothing/tree/lesson4)
 -   update App.jsx : category obj add imageUrl
 -   create folder components/category-item
 -   create file to components/category-item add category-item.component.jsx
@@ -52,11 +48,10 @@
 
 </details>
 
-### lesson5
+### [lesson5](https://github.com/wolf790206/crwn-clothing/tree/lesson5)
 <details>
 <summary>點我展開細節</summary>
 
-[lesson5](https://github.com/wolf790206/crwn-clothing/tree/lesson5)
 -   update vite.config.js : add file link 
 -   create file to ./ add jsconfig.json
 -   update jsconfig.json : add file link 
@@ -70,22 +65,20 @@
 -   delete category.styles.scss
 </details>
 
-### lesson6
+### [lesson6](https://github.com/wolf790206/crwn-clothing/tree/lesson6)
 <details>
 <summary>點我展開細節</summary>
 
-[lesson6](https://github.com/wolf790206/crwn-clothing/tree/lesson6)
 -   update index.html : add fonts link
 -   update index.css to index.scss : add fonts family
 -   update main.jsx : change import index.scss
 
 </details>
 
-### lesson7
+### [lesson7](https://github.com/wolf790206/crwn-clothing/tree/lesson7)
 <details>
 <summary>點我展開細節</summary> 
 
-[lesson7](https://github.com/wolf790206/crwn-clothing/tree/lesson7)
 -   add package react-router@7
 -   update main.jsx : add react-router BrowserRouter
 -   create folder routers
@@ -102,22 +95,20 @@
 
 </details>
 
-### lesson8
+### [lesson8](https://github.com/wolf790206/crwn-clothing/tree/lesson8)
 <details>
 <summary>點我展開細節</summary> 
 
-[lesson8](https://github.com/wolf790206/crwn-clothing/tree/lesson8)
 -   update App.jsx : add react-router Outlet
 -   update App.jsx : add navigation & shop
 -   update App.jsx : update route code
 
 </details>
 
-### lesson9
+### [lesson9](https://github.com/wolf790206/crwn-clothing/tree/lesson9)
 <details>
 <summary>點我展開細節</summary>
 
-[lesson9](https://github.com/wolf790206/crwn-clothing/tree/lesson9)
 -   create folder routers/navigation
 -   create file to routers/navigation add navigation.component.jsx
 -   update App.jsx : copy Navigation ()=>{}
