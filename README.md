@@ -250,7 +250,7 @@
 
 - 建立資料夾 `src/utils/firebase`
 - 新增檔案 `firebase.utils.js` 在 `src/utils/firebase`
--  `firebase.utils.js` ：
+-  `firebase.utils.js` 
   - 匯入 `initializeApp` 從 `firebase/app`
   - 匯入 `getAuth`, `signInWithRedirect`, `signInWithPopup`, `GoogleAuthProvider` 從 `firebase/auth`
   - 新增 `provider` 物件，設定自定義參數
@@ -295,7 +295,51 @@
 
 - [什麼是 CRUD？](https://ithelp.ithome.com.tw/articles/10244492)
   - CRUD = Create / Read / Update / Delete，是資料處理的基本操作
+- [Async Await](https://ithelp.ithome.com.tw/articles/10249787)
 ---
 
 </details>
 
+
+### [lesson12](https://github.com/wolf790206/crwn-clothing/tree/lesson12)
+<details>
+<summary>點我展開細節</summary>
+
+**Firestore 設定**
+
+- 在 Firebase Console → 選擇左側選單「Firestore Database」
+- 選擇一個 server 的位置，可以選擇離自己國家越近的位置
+- 進入「Rules」,將讀、寫設定成 true
+  - ![Firestore Database Rules](./public/firestore_database_rules_setting.png)
+  - 點擊「Publish」
+---
+
+**Firestore 會員建立**
+
+-  `firebase.utils.js` 
+  - 匯入 `getFirestore`, `doc`, `getDoc`, `setDoc` 從 `firebase/firestore`
+  - 設定 `db = getFirestore()`
+  - 建立 `createUserDocumentFromAuth` *建立會員資料*
+    - 建立 `userDocRef` 使用 `doc(db, 'users', userAuth.uid)` 
+      - *使用 doc() 函式從 Firestore 建立一個指向 'users' 的 collection、以使用者 uid 命名的文件路徑*
+    - 取得該會員資料，建立 `userSnapshot` 使用 `getDoc(userDocRef)` 取得資料
+      - *使用 getDoc() 非同步取得該文件內容*
+    - `userSnapshot.exists()` 可以確認是否已有該會員
+- `sign-in.component.jsx`
+  - 匯入 `createUserDocumentFromAuth` 從 `firebase.utils.js`
+  - 將登入的 `user` 資料傳入 `createUserDocumentFromAuth`
+  - 建立 `userDocRef`，設定 await `createUserDocumentFromAuth` 
+- `createUserDocumentFromAuth`
+  - 如果會員不存在 `!userSnapshot.exists()`
+    - 建立會員資料，使用 `setDoc(userDocRef, {要存入的資料放這})` 
+  - 如果會員已建立或存在，回傳 `userDocRef`
+---
+
+**補充概念**
+
+- [Firestore 的結構](https://www.letswrite.tw/cloud-firestore-init-v9/#%e5%af%ab%e5%85%a5%e8%b3%87%e6%96%99)
+  - *Collections > Documents > Data*
+- [Firestore Ref](https://firebase.google.com/docs/firestore/quickstart?hl=zh-tw)
+---
+
+</details>

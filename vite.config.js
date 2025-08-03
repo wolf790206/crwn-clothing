@@ -19,5 +19,5 @@ export default defineConfig({
 			'@utils': path.resolve(__dirname, './src/utils'),
 		},
 	},
-	// base: '/crwn-clothing/dist/',
+	base: '/crwn-clothing/dist/',
 });
