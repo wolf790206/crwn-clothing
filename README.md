@@ -343,3 +343,29 @@
 ---
 
 </details>
+
+### [lesson13](https://github.com/wolf790206/crwn-clothing/tree/lesson13)
+<details>
+<summary>點我展開細節</summary>
+
+**Firebase Authentication**
+
+- 在 Firebase Console → 選擇左側選單「Authentication」
+  - 開啟「Mail 登入」方式（Enable）
+  - 使用『信箱與密碼』
+---
+
+**元件建立**
+
+- 建立資料夾 `src/components/sign-up-form`
+- 新增檔案 `sign-up-form.component.jsx` 在 `src/components/sign-up-form`
+- `sign-up-form.component.jsx`
+  - 建立註冊會需要的內容 `Name`, `Email`, `Password`, `ComfirmPassword`
+- `sign-in.component.jsx`
+  - 匯入 `SignUpForm` 從 `sign-up-form.component.jsx`
+- `sign-up-form.component.jsx`
+  - 匯入 `useState` 從 `react`
+  - 建立預設的表單內容，並建立 `useState`
+  - 設定 `onchange()` 放在 `input` 讓表單可以輸入內容
+
+</details>
