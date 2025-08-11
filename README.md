@@ -369,3 +369,47 @@
   - 設定 `onchange()` 放在 `input` 讓表單可以輸入內容
 
 </details>
+
+### [lesson14](https://github.com/wolf790206/crwn-clothing/tree/lesson14)
+<details>
+<summary>點我展開細節</summary>
+
+**建立email & password 註冊**
+
+- `firebase.utils.js`
+  - 匯入 `createUserWithEmailAndPassword` 從 `firebase/auth`
+  - 建立 `createAuthUserWithEmailAndPassword` 的函式，並增加判斷防呆機制
+    - `if (!email || !password) return` // 防呆機制
+  - `createUserDocumentFromAuth` 的函式，增加判斷防呆機制
+    - `if (!userAuth) return` // 防呆機制
+  - 
+  - 建立註冊會需要的內容 `Name`, `Email`, `Password`, `ComfirmPassword`
+
+- `sign-in.component.jsx`
+  - 匯入 `SignUpForm` 從 `sign-up-form.component.jsx`
+- `sign-up-form.component.jsx`
+  - 匯入 `useState` 從 `react`
+  - 建立預設的表單內容，並建立 `useState`
+  - 設定 `onchange()` 放在 `input` 讓表單可以輸入內容
+  - 設定 `handleSubmit` 放在 `form` 讓表單可以送出請求
+    - 注意需要使用 `preventDefault`
+    - 使用 `try...catch...` 先建立帳戶
+    - 接著再將資料寫入資料庫
+
+- `firebase.utils.js`
+  - 修改 `createUserDocumentFromAuth` 增加 `additionalInformation`
+
+- `sign-up-form.component.jsx`
+  - 匯入 `createUserDocumentFromAuth` 從 `firebase.utils.js`
+  - 建立 `resetFromFields`
+  - `handleSubmit`
+    - 加入 `createUserDocumentFromAuth` 將會員資料存入資料庫
+    - 最後寫上 `resetFromFields`
+---
+
+**補充概念**
+
+- [preventDefault](https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault)
+---
+
+</details>
